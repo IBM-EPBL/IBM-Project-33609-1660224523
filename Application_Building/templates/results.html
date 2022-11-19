@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flight Delay Prediction</title>
+    <style>
+        body {
+    font-family: sans-serif;
+    /* background-image: url(images\ \(1\).jfif); */
+    background-image: url(https://img.freepik.com/premium-photo/airplane-fly-sunset-clouds-vanilla-color-background_105428-4064.jpg?w=2000);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    color: wheat;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+
+<body style="background-color: rgb(214, 197, 160);">
+
+
+
+        <center>
+    
+            <h1>  PREDICTION :  </h1>
+        
+        {%if prediction_text == 0%}
+        <h1>THE FLIGHT IS ON-TIME</h1>  
+        <img src='../static/flight.jfif'  >
+       
+    
+        {%else%}
+        <h1>THE FLIGHT IS delayed</h1>
+        <img src='../static/images (1).jfif'> 
+        
+        
+        {%endif%}
+    
+            <br><br>
+        <a href='/' style="font-size:20px;color: purple;">Go back to home page</a>
+    
+        </center>
+
+</body>
+
+</html>
